@@ -1,0 +1,11 @@
+[build]
+  command = "pip install -r requirements.txt && python3 tools/build.py"
+  publish = "public"
+
+# Don't rebuild when only README/docs change.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- content static tools netlify.toml requirements.txt"
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Cache-Control = "no-cache"

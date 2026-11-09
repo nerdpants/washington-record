@@ -1,0 +1,60 @@
+division,name,role_as_of_period_note,audit_focus,link_to_case_or_records,coverage_status
+White House,Donald Trump,president,First and second terms; see primary original report,existing cases + C181/C195,selected cases
+White House,JD Vance,vice president,Ethics disclosure and any agency influence require transaction-by-transaction checks,ProPublica financial-disclosure directory,roster only
+White House,Susie Wiles,chief of staff,"Appointments, private meetings, donors, recusals","OGE, visitor and lobbying records",roster only
+White House,Stephen Miller,deputy chief of staff/adviser,Immigration policy and court-order issues; establish personal role before accusation,court dockets and immigration habeas tracker,roster only
+White House,Russ Vought,OMB director,"GAO impoundment rulings, division of official responsibility","C207-C210, GAO ICA index",selected institutional cases
+White House,David Sacks,AI/crypto adviser,Conflicts and crypto advisory work; verify tenure and recusal,C037-C039 / public disclosures,existing cases
+White House,Steve Witkoff,special envoy,Foreign policy and associated private investment,existing C117/C172,existing cases
+Justice,Todd Blanche,"attorney general, former acting AG","Recusal, Maxwell interviews and review processes",C181-C182,selected cases
+Justice,Pam Bondi,former attorney general,"Appointments, family-law-firm ties, DOJ regulatory decisions","C056-C057, C185, C216",selected cases
+Justice,Jeanine Pirro,U.S. attorney for DC,Reflecting Pool prosecution and internal disclosure,C200,selected cases
+Justice,Alina Habba,former interim U.S. attorney NJ,"Pardon-related third party, appointment authority","C130-C133, C183",selected cases
+Justice,Lindsey Halligan,former interim U.S. attorney EDVA,Legality of appointment and indictments,C185,selected cases
+Justice,Sigal Chattah,former/putative acting U.S. attorney Nevada,Appellate disqualification ruling,C186,selected cases
+Justice,John Sarcone,former acting U.S. attorney NDNY,Court quashed subpoenas,C187,selected cases
+Justice,Bilal Essayli,first assistant/de facto prosecutor CDCA,2025 and Oct 2026 court rulings,C188,selected cases
+Justice,Ed Martin,former acting US attorney / pardon attorney,"Formal disciplinary proceedings, DOJ employment",C190,selected cases
+Justice,Emil Bove,"former DOJ official, federal appellate judge",Whistleblower allegations,C191,selected cases
+Homeland Security,Kristi Noem,former DHS secretary,"Advertising, aircraft, personnel approval influence",C201-C205,selected cases
+Homeland Security,Markwayne Mullin,DHS secretary,Review legacy procurement and any corrective actions,"C203, C205",selected cases
+Homeland Security,Corey Lewandowski,unusual DHS adviser role,"Approval of contracts, private consulting conflicts",C201-C205,selected cases
+Homeland Security,Tricia McLaughlin,"former/current DHS public-affairs official, verify dates",DHS advertising relationship and reported recusal,C201,selected cases
+Homeland Security,Cameron Hamilton,former senior official FEMA,ICA institutional and acting title/legal status,"C209, C213",selected institutional cases
+Homeland Security,David Richardson,former senior official FEMA,GAO legal opinion concerning acting role,C213,selected institutional cases
+Homeland Security,Rob Law,DHS political official,Aircraft purchases / approvals in agency records,C204,reporting-based
+Defense,Pete Hegseth,defense secretary,IG communication findings,C206,selected cases
+Defense,Steve Feinberg,deputy defense secretary,Cerberus divestment and defense contracts,"C049, C215",selected cases
+Defense,Michael Waltz,former national security adviser,"Signal invitation error, national-security records",C206,selected cases
+FBI,Kash Patel,FBI director,"Travel, aircraft and expenses",C207,selected cases
+Interior,Doug Burgum,Interior secretary,"Reflecting Pool awards and disclosures, conservation/energy",C192-C200,selected cases
+Interior,David Schutzenhofer,private Trump club manager; NOT federal official,Private role in Reflecting Pool design and sourcing,C195,selected private participant
+Energy,Chris Wright,energy secretary,Industry ties and recusal,C214,selected cases
+EPA,Lee Zeldin,EPA administrator,Regulatory decisions and industry ties need primary ethics checks,"C060-C061, C151",existing cases
+Commerce,Howard Lutnick,commerce secretary,Family-linked holdings and government financing,C167-C168,existing cases
+Housing,Bill Pulte,FHFA director,Inspector general record dispute,C170,existing cases
+Treasury,Scott Bessent,treasury secretary,Banking/crypto policy and financial disclosures,"C119, C063",existing/general leads
+State,Marco Rubio,secretary of state,Foreign deals and official-family private entanglements,C043-C045 / C117,"indirect contextual, not independently investigated"
+Health,Robert F. Kennedy Jr.,HHS secretary,Clemency intermediary reports and agency actions,C151,existing cases
+Agriculture,Brooke Rollins,agriculture secretary,Grant terminations and energy agricultural connections,C063,not individually verified
+Veterans Affairs,Doug Collins,VA secretary; former acting OGE head,Contract cancellations and ethics oversight role,C217-C218,selected cases
+SBA,Kelly Loeffler,SBA administrator,Loans/official recusal and portfolio decisions,C110,not individually verified
+Education,Linda McMahon,education secretary,Grant decisions and external financial interests,public OGE and grant records,roster only
+Labor,Lori Chavez-DeRemer,labor secretary,"Outside ties/labor grants, ethics waivers",OGE disclosures,roster only
+Transportation,Sean Duffy,transportation secretary,"Airlines, infrastructure bidding and relationships",C063 general,roster only
+Intelligence,Tulsi Gabbard,DNI,"Disclosures, declassifications and IG complaints",ODNI / oversight dockets,roster only
+USAGM,Kari Lake,former claimed acting CEO,Court ruled acting appointment invalid,C189,selected cases
+Telecom,Brendan Carr,FCC chairman,Regulatory pressure in media mergers,C077/C124,existing cases
+Securities,Paul Atkins,SEC chairman,Crypto recusal and former private clients,C058,existing cases
+Clemency,Office of Pardon Attorney,office/acting head changes,Pardon vetting exceptions and paid influence,C064/C152 and DOJ index,institutional
+Contractor,Atlantic Industrial Coatings,prime coating vendor,Technical failures and no-bid award,C192-C194,selected cases
+Contractor,Greenwater Services,water treatment prime vendor,Separate $1.7m contract not shown as liner failure,C192,selected cases
+Contractor,Mid-America Industrial Coatings,liner subcontractor,"Installation participation, liability unclear",C196,selected cases
+Contractor,Brown Construction Services,project monitor,"Schedule monitoring, not alleged installation defect",C197,selected cases
+Contractor,American Ag Energy,later water treatment contractor,Separate $2.7m reported award,C198,selected cases
+Contractor,Rhino Linings,coating material supplier,Materials mentioned in failures; company said localized cosmetic issue,C194/C199,selected cases
+Contractor,Strategy Group,DHS advertising subcontractor,"Reported $226,137.17 payment, political ties",C201,selected cases
+Contractor,Safe America Media,DHS advertising prime,Reported $143m award; must verify invoices,C201,selected cases
+Contractor,People Who Think,DHS advertising prime,Reported $77m award,C201,selected cases
+Contractor,Daedalus Aviation,aircraft company,Reported aircraft market price and political tie questions,C203,selected cases
+Contractor,Salus Worldwide Solutions,aircraft procurement vendor,Competitive-bid dispute and responses,C204,selected cases

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Newsroom editor | The Washington Record</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    // Show the article preview in the site's own typography.
+    CMS.registerPreviewStyle('/styles.css');
+    CMS.registerPreviewTemplate('articles', function (props) {
+      var e = props.entry, h = window.h;
+      var get = function (k) { return e.getIn(['data', k]) || ''; };
+      return h('div', { className: 'container article-shell' },
+        h('article', { className: 'longform', style: { maxWidth: '820px' } },
+          h('div', { className: 'kicker' }, get('section') + ' · ' + (get('label') || get('section'))),
+          h('h1', {}, get('title')),
+          h('p', { className: 'article-dek' }, get('dek')),
+          h('div', { className: 'article-byline' }, h('span', {}, get('author')), h('span', {}, String(get('date')).slice(0, 10))),
+          get('evidence_note') !== false ? h('div', { className: 'article-notice' }, h('strong', {}, 'Evidence note: '),
+            'This article describes documented official actions alongside allegations, disputes and unanswered questions.') : null,
+          h('div', { className: 'article-copy' }, props.widgetFor('body'))
+        ));
+    });
+  </script>
+</body>
+</html>

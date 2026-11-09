@@ -1,0 +1,67 @@
+# Decap CMS — newsroom editor for The Washington Record
+# Editors sign in at https://washingtonrecord.net/admin/ (Netlify Identity + Git Gateway).
+
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'New article: {{slug}}'
+    update: 'Edit article: {{slug}}'
+    delete: 'Remove article: {{slug}}'
+    uploadMedia: 'Upload {{path}}'
+    deleteMedia: 'Delete {{path}}'
+
+# Drafts → In review → Ready. Nothing goes live until someone clicks Publish.
+publish_mode: editorial_workflow
+
+site_url: https://washingtonrecord.net
+display_url: https://washingtonrecord.net
+logo_url: /assets/favicon.svg
+
+media_folder: static/assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: articles
+    label: Articles
+    label_singular: Article
+    description: >
+      Stories appear on the homepage, Newsroom, Investigations, search and RSS automatically,
+      newest first. The site updates about a minute after you publish.
+    folder: content/articles
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    slug: '{{slug}}'
+    identifier_field: title
+    summary: '{{title}} — {{date | date("MMM D, YYYY")}}'
+    sortable_fields: [date, title, section]
+    view_filters:
+      - { label: Investigations, field: section, pattern: Investigations }
+      - { label: Accountability, field: section, pattern: Accountability }
+      - { label: Money & Influence, field: section, pattern: 'Money & Influence' }
+      - { label: Justice, field: section, pattern: Justice }
+      - { label: Government, field: section, pattern: Government }
+    preview_path: 'articles/{{slug}}.html'
+    fields:
+      - { label: Headline, name: title, widget: string }
+      - { label: Subheadline, name: dek, widget: string, hint: 'One line under the headline.' }
+      - { label: Summary, name: summary, widget: text,
+          hint: '1–2 sentences. Shown on the homepage, Newsroom, search results and link previews.' }
+      - label: Desk
+        name: section
+        widget: select
+        default: Investigations
+        options: [Investigations, Accountability, Money & Influence, Justice, Government, Public affairs]
+      - { label: Topic tag, name: label, widget: string, required: false, hint: 'Short topic, e.g. "Contracts". Optional.' }
+      - { label: Byline, name: author, widget: string, default: 'The Washington Record staff' }
+      - { label: Publish date, name: date, widget: datetime, hint: 'Newest stories lead the homepage.' }
+      - { label: Show evidence note, name: evidence_note, widget: boolean, default: true,
+          hint: 'Adds the "mention does not imply guilt" box above the story.' }
+      - { label: Order (same date), name: weight, widget: number, value_type: int, default: 0, required: false,
+          hint: 'Only matters when two stories share the same publish time. Lower comes first.' }
+      - label: Story
+        name: body
+        widget: markdown
+        hint: 'Link a case file by selecting text and linking to /cases/C030.html'
